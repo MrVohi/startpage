@@ -27,7 +27,7 @@ function search(query) {
 		case '-w':
 			query = query.substr(3);
 			window.open(
-				'https://ru.wikipedia.org/w/index.php?search=' +
+				'https://en.wikipedia.org/w/index.php?search=' +
 				query.replaceChars(' ', '%20'), '_blank');
 			break;
 		case '-r':
@@ -53,11 +53,11 @@ searchInput = document.getElementById('searchbox');
 searchInput.addEventListener('keyup', function (e) {
 	if (e.keyCode === 13) {
 		if (searchInput.value === '') {
-			searchInput.placeholder = 'type something...';
+			searchInput.placeholder = 'Type something.';
 		} else {
 			search(this.value);
 			searchInput.value = '';
-			searchInput.placeholder = '-d | -y | -w | -r | -h';
+			searchInput.placeholder = 'Search with DuckDuckGo';
 		}
 	}
 });
