@@ -45,9 +45,9 @@
 /* Dark theme */
 [theme="dark"] {
 	--background: #0D141C;
-	--foreground: #1A2028;
+	--foreground: #858585;
 	--header: #A8A8A8;
-	--card-bg: #1c1d1f;
+	--card-bg: #1A2028;
 
 	--weather-fg: #BDBDBD;
 	--weather-bg: var(--card-bg);
